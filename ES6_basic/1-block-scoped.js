@@ -1,10 +1,11 @@
 export default function taskBlock(trueOrFalse) {
-  let task = false;
-  let task2 = true;
+  const task = false;
+  const task2 = true;
 
   if (trueOrFalse) {
-    const task = true;
-    const task2 = false;
+    const taskInside = true;  // On utilise un nom différent ou on bloque la portée
+    const task2Inside = false;
   }
+
   return [task, task2];
 }
